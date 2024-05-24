@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 69, 19, 0.9);
+    /* Background color */
+    z-index: 9999;
+    /* Ensure the preloader appears above other content */
+}
+
+/* Styles for the preloader */
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animation for color change */
+@keyframes colorChange {
+
+    0%,
+    100% {
+        fill: white;
+        /* Initial and Final color */
+    }
+
+    50% {
+        fill: #FFD700;
+        /* Intermediate color */
+    }
+}
+
+/* Apply animation to SVG paths */
+.preloader #main {
+    animation: colorChange 1.5s ease-in-out infinite;
+    /* Adjust duration and timing as needed */
+}
+
+.preloader #left {
+    animation: colorChange 1.5s ease-in-out infinite 0.3s;
+    /* Delayed start */
+}
+
+.preloader #right {
+    animation: colorChange 1.5s ease-in-out infinite 0.6s;
+    /* Delayed start */
+}
+
+.preloader #left-middle {
+    animation: colorChange 1.5s ease-in-out infinite 0.9s;
+    /* Delayed start */
+}
+
+.preloader #right-middle {
+    animation: colorChange 1.5s ease-in-out infinite 1.2s;
+    /* Delayed start */
+}
+
+.bg {
+    background-color: #ffb703;
+    height: 10px;
+}
+
+.nav-link {
+
+    
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+a.nav-link.active {
+    color: #ffb703;
+}
+
+.nav-link:hover {
+    color: #ffb703;
+}
+
+.navbar-text {
+    color: black;
+    
+}
+
+.hero-header {
+    color: #ffb703;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+.bigimage {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    background-image: url(pups/dog1.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.bigimage h1 {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.expbtn {
+    padding: 10px 10px;
+    background-color: #ff9100;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    border: 5px solid #fff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading2 {
+    font-family: "Open Sans", sans-serif;
+    color: #ff9100;
+    font-size: 26px;
+}
+
+
+.card-title {
+    text-transform: uppercase;
+    color: #ff9100;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.list-group {
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+    font-family: "Open Sans", sans-serif;
+}
+
+.abt {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.abt-img {
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    border: 10px solid #4682B4;
+    float: right;
+    margin-left: 100px;
+    margin-top: 30px;
+    background-position: center;
+    object-fit: cover;
+}
+
+.abt-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    /* margin-right: 150px; */
+}
+
+.abt-img2 {
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    border: 10px solid #FFA500;
+    float: right;
+    margin-top: 30px;
+    background-position: center;
+    object-fit: cover;
+}
+
+.abt-text2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+
+}
+
+.abt-img3 {
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    border: 10px solid #4682B4;
+    float: right;
+
+    margin-top: 30px;
+    background-position: center;
+    object-fit: cover;
+}
+
+.abt-text3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+
+}
+
+header {
+    color: #4682B4;
+}
