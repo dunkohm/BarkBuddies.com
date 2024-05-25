@@ -191,6 +191,14 @@ if (!is_logged_in()) {
     if(isset($_GET['insert-breed'])){
       include('add-breed.php');
   }
+          //  getter function view breeds
+    if(isset($_GET['view-breed'])){
+      include('view-breed.php');
+  }
+               //  getter function delete breed
+    if(isset($_GET['delete-breed'])){
+      include('delete-breed.php');
+  }
         //  getter function insert puppy
         if(isset($_GET['insert-puppy'])){
           include('add-puppy.php');

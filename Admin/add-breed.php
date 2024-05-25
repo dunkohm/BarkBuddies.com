@@ -28,12 +28,11 @@ if(isset($_POST['insert-breed'])){
      <h2 class="text-center text-warning mt-2" style="font-family: Roboto sans-serif;">Insert new Breed</h2>
         <div class="container-fluid mx-5">
        <form action="" method="post" class="mb-3 ">
-         <div class="input-group w-70 mb-3 shadow">
+         <div class="input-group w-50 mb-3 m-auto shadow">
            <span class="input-group-text bg-warning" id="basic-addon1">Breeds</span>
            <input type="text" class="form-control" placeholder=" insert Breed"name="breed-title" aria-label="Breeds">
          </div>
-         <div class=""></div>
-         <div class="input-group d-grid  mb-3 px-5">
+         <div class="input-group d-grid w-50 m-auto mb-3 px-5">
            <input type="submit" value="Add Breed" class="btn btn-outline-warning text-dark" name="insert-breed">
           </div>
         </form>
