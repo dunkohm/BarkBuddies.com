@@ -58,17 +58,30 @@ if (!is_logged_in()) {
     </div>
     <!-- Dashboard side menu -->
      <div class="container-fluid">
-     <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-warning fs-2">Manage Bark Buddies</a>
-    <span class="navbar navbar-text">
-    <a href="#" class="btn-logout text-danger text-decoration-none"><i class="bi bi-box-arrow-right"></i> Log Out</a>
-      </span>
-  </div>
-</nav>
-     <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-     <i class="bi bi-list"></i>
-</a>
+      <div class="row">
+      <a class="navbar-brand text-warning text-center fs-2">Manage Bark Buddies</a>
+      </div>
+      <div class="row">
+        <div class="col">
+        <div class="d-flex justify-content-start">
+      <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+     <i class="bi bi-list"></i></a>
+      </div>
+        </div>
+      <div class="col">
+      <div class="d-flex justify-content-end ">
+            <?php
+               $username=$_SESSION['admin_name'];
+               $user_image="select * from `admin_table` where admin_name='$username'";
+               $user_image=mysqli_query($con,$user_image);
+                $row_image=mysqli_fetch_array($user_image);
+               $user_image=$row_image['admin_image'];
+                echo "<img src='adminImages/$user_image' style='border-radius:50%; width:40px; class='img-fluid m-2''>";
+             ?> 
+              
+          </div>
+      </div>
+      </div>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
@@ -159,20 +172,24 @@ if (!is_logged_in()) {
     </div>
   </div>
 </div>
+    <div class="text-center">
+    <a href="#" class="px-2 text-decoration-none text-danger text-center"style="font-size: 25px;" aria-labelledby="Log out"><i class="bi bi-box-arrow-right text-danger" style="font-size: 25px;"></i> Log out</a>
+    </div>
   </div>
 </div>
      </div>
      <div class="container-fluid">
-        <div class="row ">
+        <div class="row d-flex flex-row my-auto mx-auto">
             <!-- admin header -->
-          <div class="admin-header text-center d-flex">
+          <div class="admin-header text-center">
             <?php
             if(!isset($_SESSION['admin_name'])){
               echo"<h3 class='salutation'>Fuck you<span class='text-warning' >Stranger!</span>!</h3>";
             }else{
-              echo"<h3 class='salutation'>Welcome back <span class='text-warning' >".$_SESSION['admin_name']."</span>!</h3>";
+              echo"<h4 class='salutation'>Welcome <span class='text-warning' >".$_SESSION['admin_name']."</span>!</h4>";
             }
-            ?>
+            ?>          
+             </div>
              </div>
                  <div class="nav navbar p-2 stats ">
                   <p class="mt-2">Breeds Available: 25</p>
