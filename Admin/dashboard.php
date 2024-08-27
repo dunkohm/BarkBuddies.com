@@ -191,10 +191,10 @@ if (!is_logged_in()) {
             ?>          
              </div>
              </div>
-                 <div class="nav navbar p-2 stats ">
+                 <div class="nav navbar p-2 stats border border ">
                   <p class="mt-2">Breeds Available: 25</p>
                   <p class="mt-2">Total Listed : 803</p>
-                  <p class="mt-2">Total Blogs Published: 45</p>
+                  <p class="mt-2">Total Blogs : 45</p>
                   <p class="mt-2">Total Users : 2</p>
                   <p class="mt-2">Topics: 12</p>
                  
@@ -212,6 +212,10 @@ if (!is_logged_in()) {
     if(isset($_GET['view-breed'])){
       include('view-breed.php');
   }
+            //  getter function edit breeds
+            if(isset($_GET['edit-breed'])){
+              include('edit-breed.php');
+          }
                //  getter function delete breed
     if(isset($_GET['delete-breed'])){
       include('delete-breed.php');

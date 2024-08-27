@@ -99,20 +99,23 @@ a.nav-link.active {
     overflow-x: hidden;
 }
 
-.bigimage {
-    width: 100vw;
-    height: 80vh;
-    position: relative;
-    background-image: url(pups/dog1.jpg);
-    background-size: cover;
-    overflow-x: hidden;
-}
+
+  /* Media query for small screens */
+@media (max-width: 1277px) {
+    .hero-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
 
 .bigimage h1 {
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-style: italic;
+    
 
 }
 
@@ -155,6 +158,7 @@ a.nav-link.active {
     width: 100%;
     height: 200px;
     object-fit: contain;
+    
 }
 
 .list-group {

@@ -11,6 +11,7 @@ include("includes/connect.php");
     <!-- adminpage header -->
  <div class="container-fluid text-center ">
     <h2 class="text-warning mb-4">All Puppies listed</h2>
+    <div class="table-responsive">
   <table class="table table-bordered border-warning mt-5 table-hover table-responsive ">
     <thead class="table-warning">
         <tr>
@@ -67,6 +68,7 @@ include("includes/connect.php");
     </tbody>
 
   </table>
+  </div>
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">

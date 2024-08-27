@@ -19,6 +19,81 @@ include("Admin/functions/functions.php");
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Apply a blur effect to the video */  
+}
+.carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.carousel-text {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Background colors for each item */
+#item1 {
+    background-image: url("pups/img10.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+#item2 {
+  background-image: url("pups/img9.jpg");
+  background-repeat: no-repeat;
+}
+
+#item3 {
+  background-image: url("pups/img.jpg");
+  background-repeat: no-repeat;
+}
+
+/* Keyframes for carousel */
+@keyframes carouselAnimation {
+    0% { opacity: 1; }
+    33.33% { opacity: 0; }
+    66.66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Applying the keyframes to each item */
+#item1 {
+    animation: carouselAnimation 29s infinite;
+}
+
+#item2 {
+    animation: carouselAnimation 19s infinite;
+    animation-delay: 3s;
+}
+
+#item3 {
+    animation: carouselAnimation 19s infinite;
+    animation-delay: 10s;
+}
+  </style>
 </head>
 
 <body class="bg-light">
@@ -63,7 +138,7 @@ include("Admin/functions/functions.php");
               <a class="nav-link" href="puppy-listing.php">Find a puppy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
+              <a class="nav-link" href="blogs.php">Blogs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact us</a>
@@ -72,10 +147,11 @@ include("Admin/functions/functions.php");
               <a class="nav-link" href="#">FAQ's</a>
             </li>
           </ul>
-          <span class="navbar-text g-2">
-          <i class="bi bi-tiktok"> WoofWonder</i>
-          <i class="bi bi-instagram"> WoofWonderKe</i>
-          <i class="bi bi-telephone-fill"></i> (+254)114 063 049
+          <span class="navbar-text g-2"> Follow Us:
+          <i class="bi bi-tiktok fs-4"></i>
+          <i class="bi bi-instagram fs-4"></i>
+          <i class="bi bi-facebook fs-4"></i>
+         
           </span>
         </div>
       </div>
@@ -86,15 +162,87 @@ include("Admin/functions/functions.php");
 
     </nav>
     <!-- Hero -->
-    <div class="bigimage img-fluid">
-      <div class="overlay">
-        <h1>Connecting Hearts, One Paw Print at a Time</h1>
-        <a href="puppy-listing.php"><input type="button" value="Find a Puppy" class="expbtn"></a>
+  <div class="container-fluid" style="overflow-x: hidden;">
+    <div class="row">
+       <!-- Hero Image with Text Overlay -->
+       <div class="hero-container" style="position: relative; text-align: center; color: white;">
+            <!-- Image -->
+            <img src="pups/202.jpg" class="hero-image" style="width: 100%; height: auto; filter: blur(2px);min-width: 1100px; overflow-x: hidden;">
+            
+            <!-- Text Overlay -->
+            <div class="hero-text" style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+               ">
+                <h1>GET YOUR PUFFY BESTFRIEND ONLINE!</h1>
+                <p class="lead fs-4 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente voluptate non molestias iusto at dolor! Ut voluptas laudantium laboriosam!</p>
+               <a href="#about"> <input type="submit" value="Explore more" class="btn btn-lg btn-warning shadow "></a>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <section class="mt-5" id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="text-center text-warning mt-5">WHO ARE WE?</h3>
+        <hr class="text-warning px-lg-5 mb-5" style="">
+        <p class="lead text-center px-lg-5 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ea cum quia consequatur recusandae saepe aut nostrum nesciunt. Eos reprehenderit fuga quae voluptatem, quidem magni velit placeat. Enim suscipit inventore tenetur similique fugit quibusdam! Suscipit in quo recusandae exercitationem distinctio obcaecati fugit culpa natus, odit corporis reiciendis explicabo debitis ut sit adipisci impedit, pariatur consequatur excepturi porro
+           sequi qui totam magnam officiis necessitatibus. Dolore adipisci quod modi a fugit facere.</p>
+           <div class="container-fluid">
+           <h3 class="text-center text-warning mt-3 mb-3">SERVICES WE OFFER</h3>
+            <div class="row d-flex justify-content-center px-5 text-center mb-3">
+              <div class="col-md-3">
+                <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+                <img src="pups/205.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h3>Pet Adoption</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, saepe!</p>
+                    <a href="puppy-listing.php" class="lead text-warning text-decoration-none">See Listed Options</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <img src="pups/204.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3>Pet Grooming</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, saepe!</p>
+                    <a href="#" class="lead text-warning text-decoration-none">Read More.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <img src="pups/203.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3>Pet Care</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, saepe!</p>
+                    <a href="#" class="lead text-warning text-decoration-none">Read More.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <img src="pups/206.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3>Pet Insurance</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, saepe!</p>
+                    <a href="#" class="lead text-warning text-decoration-none">Read More.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          <!-- <a href="#breeds" class="btn btn-warning text-center text-decoration-none">See available breeds</a> -->
       </div>
     </div>
-    <div class="container-fluid">
+  </section>
+    <div class="container-fluid" id="breeds">
       <div class="row px-2 d-flex justify-content-around">
-        <h4 class="text-center mt-3 heading2">Puppies for sale from across Kenya!</h4>
+        <h4 class="text-center mt-3 heading2">Pets for sale from across Kenya!</h4>
 
        <?php
        
@@ -168,13 +316,13 @@ include("Admin/functions/functions.php");
         <ul class="navbar-nav me-auto text-center quick-links">
           <h4 class="quick-link-header">Quick links</h4>
           <li class="nav-item">
-            <a href="listed.html" class="nav-link text-light"> Breeds available</a>
+            <a href="puppy-listing.php" class="nav-link text-light"> Breeds available</a>
           </li>
           <li class="nav-item">
-            <a href="blogs.html" class="nav-link text-light"> Blogs</a>
+            <a href="blogs.php" class="nav-link text-light"> Blogs</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-light"> WoofWonder care</a>
+            <a href="pet-care.php" class="nav-link text-light"> WoofWonder pet care</a>
           </li>
           <li class="nav-item">
             <a href="aboutus.html" class="nav-link text-light"> About us</a>
