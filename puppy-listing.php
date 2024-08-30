@@ -99,18 +99,34 @@ include("Admin/functions/functions.php");
            
             ?>
           </div>
+          
+      <div class="row d-flex justify-content-center mx-auto mt-3">
+        <div class="text-center">
+        <nav aria-label="Page navigation example">
+               <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                   </li>
+                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                   <li class="page-item">
+                   <a class="page-link" href="#">Next</a>
+               </li>
+             </ul>
+         </nav>
         </div>
-        <div class="col-md-2 border  p-0 shadow ">
+        </div>
+        </div>
+        <div class="col-md-2 border p-0 shadow mb-2 ">
           <form action="search-breed.php" method="get">
           <div class="d-grid m-2">
             <input type="text" class="form-control mb-2" placeholder="Search Breed" name="search_data">
             <input type="submit" value="Search" name="search_data_breed" class="btn btn-outline-warning">
             </div>
           </form>
-        
-          <div class="bg-warning text-center">
-            
-            <h3 class="">Breeds available</h3>
+          <div class="text-center mt-3">
+            <h3 class="bg-primary text-light">Breeds available</h3>
           </div>
           <?php
             getBreeds();
@@ -119,32 +135,10 @@ include("Admin/functions/functions.php");
       </div> 
     </div> 
 
-
-
-       
-
-        <div class="text-center mt-3">
-          <input type="button" value="See More Puppies" class="expbtn">
-        </div>
       </div>
     </div>
   </div>
-  <!-- Block quote -->
-  <div class="row d-flex justify-content-center mb-3">
-        <div class="card mt-3 border border-0 shadow"style="width: 38rem;">
-            <div class="card-body">
-                <div class="text-center">
-                    <img src="pups/img8.jpg " alt="" style="width: 200px; height: 200px; border-radius: 50%; border: 1px solid #ff9100;background-size: cover;" class="card-img-top">
-                </div>
-                
-              <blockquote class="blockquote mb-0">
-                <p class="text-center">A dog is the only thing on earth that loves you more than he loves himself.</p>
-                <footer class="blockquote-footer"> Josh Billings </footer>
-              </blockquote>
-            </div>
-          </div>
-    
-  </div>
+
   <!-- Footer -->
   <div class="footer bg-primary m-0 p-0 ">
     <div class="row">
@@ -201,7 +195,7 @@ include("Admin/functions/functions.php");
 
     <div class="row">
       <div class="text-center copy">
-        <p>&copy; 2023 WoofWonderKenya.com All rights reserved.</p>
+        <p class="text-light">&copy; 2023 WoofWonderKenya.com All rights reserved.</p>
       </div>
       <div class="scrollToTopButton">
         <button id="scrollToTopButton" title="Go to top">&#9650;</button>

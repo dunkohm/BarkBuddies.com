@@ -16,6 +16,7 @@ include("Admin/functions/functions.php");
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Rubik+Scribble&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -138,10 +139,13 @@ include("Admin/functions/functions.php");
               <a class="nav-link" href="puppy-listing.php">Find a puppy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blogs.php">Blogs</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="#">Pet care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ's</a>
@@ -151,7 +155,6 @@ include("Admin/functions/functions.php");
           <i class="bi bi-tiktok fs-4"></i>
           <i class="bi bi-instagram fs-4"></i>
           <i class="bi bi-facebook fs-4"></i>
-         
           </span>
         </div>
       </div>
@@ -176,8 +179,8 @@ include("Admin/functions/functions.php");
                 left: 50%;
                 transform: translate(-50%, -50%);
                ">
-                <h1>GET YOUR PUFFY BESTFRIEND ONLINE!</h1>
-                <p class="lead fs-4 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente voluptate non molestias iusto at dolor! Ut voluptas laudantium laboriosam!</p>
+                <h1 data-aos="fade-up"  data-aos-duration="2000">GET YOUR PUFFY BESTFRIEND ONLINE!</h1>
+                <p class="lead fs-4 mb-3" data-aos="fade-up"  data-aos-duration="1500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente voluptate non molestias iusto at dolor! Ut voluptas laudantium laboriosam!</p>
                <a href="#about"> <input type="submit" value="Explore more" class="btn btn-lg btn-warning shadow "></a>
             </div>
         </div>
@@ -191,11 +194,11 @@ include("Admin/functions/functions.php");
         <hr class="text-warning px-lg-5 mb-5" style="">
         <p class="lead text-center px-lg-5 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ea cum quia consequatur recusandae saepe aut nostrum nesciunt. Eos reprehenderit fuga quae voluptatem, quidem magni velit placeat. Enim suscipit inventore tenetur similique fugit quibusdam! Suscipit in quo recusandae exercitationem distinctio obcaecati fugit culpa natus, odit corporis reiciendis explicabo debitis ut sit adipisci impedit, pariatur consequatur excepturi porro
            sequi qui totam magnam officiis necessitatibus. Dolore adipisci quod modi a fugit facere.</p>
-           <div class="container-fluid">
+           <div class="container-fluid" id="services">
            <h3 class="text-center text-warning mt-3 mb-3">SERVICES WE OFFER</h3>
             <div class="row d-flex justify-content-center px-5 text-center mb-3">
               <div class="col-md-3">
-                <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+                <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;"data-aos="fade-up"  data-aos-duration="2500">
                 <img src="pups/205.jpg" class="card-img-top img-fluid" alt="...">
                   <div class="card-body">
                     <h3>Pet Adoption</h3>
@@ -205,7 +208,7 @@ include("Admin/functions/functions.php");
                 </div>
               </div>
               <div class="col-md-3">
-              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;"data-aos="fade-up"  data-aos-duration="2000">
               <img src="pups/204.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h3>Pet Grooming</h3>
@@ -215,7 +218,7 @@ include("Admin/functions/functions.php");
                 </div>
               </div>
               <div class="col-md-3">
-              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;"data-aos="fade-up"  data-aos-duration="1500">
               <img src="pups/203.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h3>Pet Care</h3>
@@ -225,7 +228,7 @@ include("Admin/functions/functions.php");
                 </div>
               </div>
               <div class="col-md-3">
-              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;">
+              <div class="card text-center mb-3 border border-none shadow" style=" width: 12.5rem;"data-aos="fade-up"  data-aos-duration="1000">
               <img src="pups/206.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h3>Pet Insurance</h3>
@@ -240,6 +243,50 @@ include("Admin/functions/functions.php");
       </div>
     </div>
   </section>
+  <!-- Why choose us -->
+  <section class="abt bg-primary bg-gradient">
+      <div class="row d-flex mx-auto px-auto">
+        <div class=" mt-3 mb-3">
+          <h2 class="text-center text-light">Why we are different</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <!-- image col -->
+          <div class="col-md-6 "data-aos="zoom-in-right" data-aos-duration="2000">
+            <div class="text-center">
+            <img src="pups/207.jpg" class="img-fluid mb-2 shadow border border-2 border-warning" alt="" style="
+             height: 620px;
+             border-radius: 0px 30px 0px 30px">
+            </div>
+            
+          </div>
+          <!-- content col -->
+          <div class="col-md-6">
+            <div class="text-center">
+              <div class="card border border-warning bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="2000">
+                <div class="card-body ">
+                  <h3 class="text-center text-light">Heading</h3>
+                  <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                </div>
+              </div>
+
+              <div class="card border border-warning bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="1500">
+                <div class="card-body ">
+                  <h3 class="text-center text-light">Heading</h3>
+                  <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                </div>
+              </div>
+
+              <div class="card border border-warning bg-transparent shadow mb-4" data-aos="fade-left"  data-aos-duration="1000">
+                <div class="card-body ">
+                  <h3 class="text-center text-light">Heading</h3>
+                  <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
     <div class="container-fluid" id="breeds">
       <div class="row px-2 d-flex justify-content-around">
         <h4 class="text-center mt-3 heading2">Pets for sale from across Kenya!</h4>
@@ -255,77 +302,25 @@ include("Admin/functions/functions.php");
         </div>
       </div>
     </div>
-    <!-- Why choose us -->
-    <section class="abt bg-light" id="about">
-      <div class="row d-flex mx-auto px-auto">
-        <div class=" mt-3 mb-3">
-          <h2 class="text-center" style="color:#4682B4;">Why we are different</h2>
-        </div>
-        <div class="row d-flex">
-          <!-- image side -->
-          <div class="col-md-6">
-            <div>
-              <img src="pups/img3.jpg" class="abt-img" alt="">
-            </div>
-
-          </div>
-          <!-- content side -->
-          <div class="col-md-6">
-            <h3 class="abt-header text-center mt-5">Lorem ipsum dolor sit.</h3>
-            <p class="abt-text text-center p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eos facere alias incidunt sunt omnis minima corrupti! Officiis praesentium earum perferendis.</p>
-          </div>
-        </div>
-        <!-- row 2 -->
-        <div class="row d-flex">
-          <!-- image side -->
-          <div class="col-md-6">
-            <div class="">
-              <img src="pups/img4.jpg" class="abt-img2" alt="">
-            </div>
-          </div>
-          <!-- content side -->
-          <div class="col-md-6">
-            <h3 class="abt-header text-center mt-5">Lorem ipsum dolor sit.</h3>
-            <p class="abt-text2 text-center p-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eos facere alias incidunt sunt omnis minima corrupti! Officiis praesentium earum perferendis.</p>
-          </div>
-
-        </div>
-        <!-- row 3 -->
-        <div class="row d-flex mb-2">
-          <!-- image side -->
-          <div class="col-md-6">
-            <div>
-              <img src="pups/img5.jpg" class="abt-img3 text-center" alt="">
-            </div>
-          </div>
-          <!-- content side -->
-          <div class="col-md-6">
-            <h3 class="abt-header text-center mt-5">Lorem ipsum dolor sit.</h3>
-            <p class="abt-text3 text-center p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eos facere alias incidunt sunt omnis minima corrupti! Officiis praesentium earum perferendis.</p>
-          </div>
-        </div>
-    </section>
+    
   </div>
   <!-- Footer -->
   <div class="footer bg-primary m-0 p-0 ">
     <div class="row">
       <div class="col-md-4">
         <ul class="navbar-nav me-auto text-center quick-links">
-          <h4 class="quick-link-header">Quick links</h4>
+          <h4 class="text-light">Quick links</h4>
           <li class="nav-item">
             <a href="puppy-listing.php" class="nav-link text-light"> Breeds available</a>
           </li>
           <li class="nav-item">
-            <a href="blogs.php" class="nav-link text-light"> Blogs</a>
+            <a href="#services" class="nav-link text-light"> Services</a>
           </li>
           <li class="nav-item">
             <a href="pet-care.php" class="nav-link text-light"> WoofWonder pet care</a>
           </li>
           <li class="nav-item">
-            <a href="aboutus.html" class="nav-link text-light"> About us</a>
+            <a href="#about" class="nav-link text-light"> About us</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link text-light"> Delivery Policies</a>
@@ -334,7 +329,7 @@ include("Admin/functions/functions.php");
       </div>
       <div class="col-md-4">
         <ul class="navbar-nav me-auto text-center quick-links">
-          <h4 class="quick-link-header">Talk to Us</h4>
+          <h4 class="text-light">Talk to Us</h4>
           <li class="nav-item">
             <a href="#" class="nav-link text-light"> <i class="bi bi-whatsapp"></i> Whatsapp : +254 114063049</a>
           </li>
@@ -351,7 +346,7 @@ include("Admin/functions/functions.php");
         </ul>
       </div>
       <div class="col-md-4">
-        <h4 class="quick-link-header text-center">Location</h4>
+        <h4 class="text-light text-center">Location</h4>
         <div class="container-fluid">
           <!--map-->
           <div class="text-center">
@@ -365,7 +360,7 @@ include("Admin/functions/functions.php");
 
     <div class="row">
       <div class="text-center copy">
-        <p>&copy; 2023 WoofWonderKenya.com All rights reserved.</p>
+        <p class="text-light">&copy; 2023 WoofWonderKenya.com All rights reserved.</p>
       </div>
       <div class="scrollToTopButton">
         <button id="scrollToTopButton" title="Go to top">&#9650;</button>
@@ -377,9 +372,13 @@ include("Admin/functions/functions.php");
   </div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
