@@ -276,49 +276,54 @@
                 </div>
               </section>
               <!-- Why choose us section -->
-              <section class=" p-0 vh-100">
-                  <h1 class="text-center mt-3 display-3 fw-bold">Why <span class="text-warning">Choose Us?</span></h1>
+              <section class="mt-3">
+                <div class="container-fluid">
+                    <h1 class="text-center mt-3 display-3 fw-bold">Why <span class="text-warning">Choose Us?</span></h1>
+                    <hr class="mx-auto mb-5 w-25"> 
                   <div class="row bg-primary bg-gradient d-flex">
-                    <div class="row d-flex justify-content-center mx-auto">
-                        <!-- image col -->
-                        <div class="col-6 col-md-4 "data-aos="zoom-in-right" data-aos-duration="2000">
-                          <div class="text-center">
-                          <img src="pups/H101.png" class="img-fluid mb-2" alt="">
-                          </div> 
-                        </div>
-                        <!-- content col -->
-                        <div class="col-md-6 mt-3">
-                          <div class="text-center">
-                            <div class="card border  bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="2000">
-                              <div class="card-body ">
-                                <h3 class="text-center text-light">Heading</h3>
-                                <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
-                              </div>
+                      <div class="row d-flex justify-content-center mx-auto">
+                            <!-- image col -->
+                            <div class="col-6 col-md-4 "data-aos="zoom-in-right" data-aos-duration="2000">
+                              <div class="text-center">
+                              <img src="pups/H101.png" class="img-fluid mb-2" alt="">
+                              </div> 
                             </div>
+                            <!-- content col -->
+                            <div class="col-md-6 mt-3">
+                              <div class="text-center">
+                                <div class="card border bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="2000">
+                                  <div class="card-body">
+                                    <h3 class="text-center text-light">Heading</h3>
+                                    <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                                  </div>
+                                </div>
 
-                            <div class="card border  bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="1500">
-                              <div class="card-body ">
-                                <h3 class="text-center text-light">Heading</h3>
-                                <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
-                              </div>
-                            </div>
+                                <div class="card border  bg-transparent shadow mb-4"data-aos="fade-left"  data-aos-duration="1500">
+                                  <div class="card-body ">
+                                    <h3 class="text-center text-light">Heading</h3>
+                                    <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                                  </div>
+                                </div>
 
-                            <div class="card border  bg-transparent shadow mb-4" data-aos="fade-left"  data-aos-duration="1200">
-                              <div class="card-body ">
-                                <h3 class="text-center text-light">Heading</h3>
-                                <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                                <div class="card border  bg-transparent shadow mb-4" data-aos="fade-left"  data-aos-duration="1200">
+                                  <div class="card-body ">
+                                    <h3 class="text-center text-light">Heading</h3>
+                                    <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, asperiores.</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                    </div>
-                     
-                 </div>
-                </section>
-              <section class="">
-                    <div class="container-fluid" id="breeds">  
+                       </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Section for available breeds -->
+              <section class="mt-5">
+                    <div class="container-fluid mt-5" id="breeds">  
+                    <h1 class="text-center mt-2 display-3 fw-bold">Pets <span class="text-warning">Available</span></h1> 
+                    <hr class="mx-auto mb-5 w-25">  
                       <div class="row px-2 d-flex justify-content-around">  
-                      <h1 class="text-center mt-2 display-3 fw-bold">Pets <span class="text-warning">Available</span></h1>             
+                              
                       <?php    
                       getPuppies();
                       ?>
