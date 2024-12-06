@@ -207,7 +207,7 @@ function getBreeds(){
     while($row_data=mysqli_fetch_assoc($result_breeds)){
       $breed_title=$row_data['breed_tittle'];
       $breed_id=$row_data['breed_id'];
-      echo " <ul class='text-center bg-transparent list-group list-group-flush'>
+      echo " <ul class='text-center list-group list-group-flush'>
       <li class='list-group-item'>
       <a href='puppy-listing.php?breed=$breed_id' class='nav-link text-dark' style='font-style: italic;font-size: 17px;'>$breed_title</a>
     </li></ul>";

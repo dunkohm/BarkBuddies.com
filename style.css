@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     /* overflow-x: hidden; */
+    background-blend-mode: multiply;
 }
 
 .preloader-container {
@@ -226,3 +227,4 @@ a.nav-link.active {
 header {
     color: #4682B4;
 }
+

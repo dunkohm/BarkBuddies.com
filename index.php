@@ -8,7 +8,7 @@ include("Admin/functions/functions.php");
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WoofWonderKenya | puppy listing</title>
+  <title>The pup Shop | puppy listing</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -94,6 +94,42 @@ include("Admin/functions/functions.php");
     animation: carouselAnimation 19s infinite;
     animation-delay: 10s;
 }
+.theme-text {
+  color: #474af0;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #474af0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
+}
   </style>
 </head>
 
@@ -125,7 +161,7 @@ include("Admin/functions/functions.php");
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-light w-100">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">WoofWonderKenya.com</a>
+        <a class="navbar-brand" href="index.php">The Pup Shop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -148,6 +184,9 @@ include("Admin/functions/functions.php");
               <a class="nav-link" href="#">Store</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">FAQ's</a>
             </li>
           </ul>
@@ -161,16 +200,16 @@ include("Admin/functions/functions.php");
     </nav>
     <!-- Nav end -->
     <!-- yellow line -->
-    <nav class="bg">
+    <!-- <nav class="bg"> -->
 
     </nav>
     <!-- Hero -->
   <div class="container-fluid" style="overflow-x: hidden;">
     <div class="row">
        <!-- Hero Image with Text Overlay -->
-       <div class="hero-container" style="position: relative; text-align: center; color: white;">
+       <div class="hero-container" style="position: relative; text-align: center; color: white; background:linear-gradient(135deg, #ffb703, #f67d3e);">
             <!-- Image -->
-            <img src="pups/202.jpg" class="hero-image" style="width: 100%; height: auto; filter: blur(2px);min-width: 1100px; overflow-x: hidden;">
+            <img src="pups/H101.png" class="hero-image" style="width: 600px; height:600px ;">
             
             <!-- Text Overlay -->
             <div class="hero-text" style="
@@ -179,9 +218,9 @@ include("Admin/functions/functions.php");
                 left: 50%;
                 transform: translate(-50%, -50%);
                ">
-                <h1 data-aos="fade-up"  data-aos-duration="2000">GET YOUR PUFFY BESTFRIEND ONLINE!</h1>
+                <h1 data-aos="fade-up"  data-aos-duration="2000" class="text-center mt-3 display-3 fw-bold"><span class="theme-text">GET</span> YOUR PUFFY BESTFRIEND <span class="theme-text">ONLINE!</span></h1>
                 <p class="lead fs-4 mb-3" data-aos="fade-up"  data-aos-duration="1500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente voluptate non molestias iusto at dolor! Ut voluptas laudantium laboriosam!</p>
-               <a href="#about"> <input type="submit" value="Explore more" class="btn btn-lg btn-warning shadow "></a>
+               <a href="#about"> <input type="submit" value="Explore more" class="btn btn-lg btn-outline-info shadow "></a>
             </div>
         </div>
     </div>
@@ -190,11 +229,11 @@ include("Admin/functions/functions.php");
   <section class="mt-5" id="about">
     <div class="container-fluid">
       <div class="row">
-        <h3 class="text-center text-warning mt-5">WHO ARE WE?</h3>
+      <h1 class="text-center mt-5 display-3 fw-bold">Who <span class="theme-text">are we?</span></h1>
         <hr class="text-warning px-lg-5 mb-5" style="">
         <p class="lead text-center px-lg-5 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ea cum quia consequatur recusandae saepe aut nostrum nesciunt. Eos reprehenderit fuga quae voluptatem, quidem magni velit placeat. Enim suscipit inventore tenetur similique fugit quibusdam! Suscipit in quo recusandae exercitationem distinctio obcaecati fugit culpa natus, odit corporis reiciendis explicabo debitis ut sit adipisci impedit, pariatur consequatur excepturi porro
            sequi qui totam magnam officiis necessitatibus. Dolore adipisci quod modi a fugit facere.</p>
-           <div class="container-fluid" id="services">
+           <!-- <div class="container-fluid" id="services">
            <h3 class="text-center text-warning mt-3 mb-3">SERVICES WE OFFER</h3>
             <div class="row d-flex justify-content-center px-5 text-center mb-3">
               <div class="col-md-3">
@@ -238,7 +277,77 @@ include("Admin/functions/functions.php");
                 </div>
               </div>
             </div>
-           </div>
+           </div> -->
+           <div class="container-fluid">
+        <h1 class="text-center mt-5 display-3 fw-bold">Our <span class="theme-text">Services</span></h1>
+        <hr class="mx-auto mb-5 w-25">
+        <div class="row mb-5">
+            <div class="col-12 col-sm-6 col-md-3 m-auto mb-3">
+                <!-- card starts here -->
+                <div class="card shadow">
+                    <img src="pups/205.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="text-center">Pet Adoption</h3>
+                        <hr class="mx-auto w-75">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
+                            nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
+                        </p>
+                    </div>
+                </div>
+                <!-- card ends here -->
+            </div>
+            <!-- col ends here -->
+            <div class="col-12 col-sm-6 col-md-3 m-auto mb-3">
+                <!-- card starts here -->
+                <div class="card shadow">
+                    <img src="pups/204.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="text-center">Pet Grooming</h3>
+                        <hr class="mx-auto w-75">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
+                            nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
+                        </p>
+                    </div>
+                </div>
+                <!-- card ends here -->
+            </div>
+            <!-- col ends here -->
+            <div class="col-12 col-sm-6 col-md-3 m-auto mb-3">
+                <!-- card starts here -->
+                <div class="card shadow">
+                    <img src="pups/203.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="text-center">Pet Care</h3>
+                        <hr class="mx-auto w-75">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
+                            nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
+                        </p>
+                    </div>
+                </div>
+                <!-- card ends here -->
+            </div>
+            <!-- col ends here -->
+            <div class="col-12 col-sm-6 col-md-3 m-auto mb-3">
+                <!-- card starts here -->
+                <div class="card shadow">
+                    <img src="pups/206.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="text-center">Pet Insurance</h3>
+                        <hr class="mx-auto w-75">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
+                            nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
+                        </p>
+                    </div>
+                </div>
+                <!-- card ends here -->
+            </div>
+            <!-- col ends here -->
+        </div>
+    </div>
           <!-- <a href="#breeds" class="btn btn-warning text-center text-decoration-none">See available breeds</a> -->
       </div>
     </div>
